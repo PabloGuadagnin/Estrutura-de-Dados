@@ -1,3 +1,5 @@
+package Exercício_01;
+
 public class PontoCartesiano {
     private double xA;
     private double yA;
