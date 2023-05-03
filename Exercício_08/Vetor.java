@@ -1,4 +1,4 @@
-package Exercício_07;
+package Exercício_08;
 
 import java.util.Random;
 
