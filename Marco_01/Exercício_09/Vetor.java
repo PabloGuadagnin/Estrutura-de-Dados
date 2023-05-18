@@ -61,6 +61,11 @@ public class Vetor {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Vetor: " + Arrays.toString(vetor);
+    }
+
     public int maximoIteracao() {
         int maior = 0;
         for (int i = 0; i < vetor.length; i++) {
