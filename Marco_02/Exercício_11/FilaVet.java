@@ -1,7 +1,5 @@
 package Marco_02.Exercício_11;
 
-import java.util.Arrays;
-
 public class FilaVet implements IFila { // tem funcionamento circular
     private int nElemFila;
     private int inicio;
@@ -35,7 +33,11 @@ public class FilaVet implements IFila { // tem funcionamento circular
     }
 
     public void imprimeFila() {
-        System.out.println(Arrays.toString(vetFila));
+        int index = this.inicio;
+        for (int i = 0; i < this.nElemFila; i++) {
+            System.out.print(" [" + this.vetFila[index] + "] ");
+            index = (index + 1) % this.vetFila.length;
+        }
     }
 
     public boolean isEmpty() {
