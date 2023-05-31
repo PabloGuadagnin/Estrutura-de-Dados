@@ -1,11 +1,11 @@
-package Marco_02.Exercício_11;
+package Marco_02.Exercício_12;
 
-public class FilaVet implements IFila { // tem funcionamento circular
+public class Fila implements IFila { // tem funcionamento circular
     private int nElemFila;
     private int inicio;
     private Object[] vetFila;
 
-    public FilaVet(int tamFila) { // construtor
+    public Fila(int tamFila) { // construtor
         this.nElemFila = 0;
         this.inicio = 0;
         this.vetFila = new Object[tamFila];

@@ -2,7 +2,7 @@ package Marco_02.Exercício_11;
 
 public class Main {
     public static void main(String[] args) {
-        FilaVet fila = new FilaVet(5);
+        Fila fila = new Fila(5);
 
         fila.add(1);
         fila.add(2);
