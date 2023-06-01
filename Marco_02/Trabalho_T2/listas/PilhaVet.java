@@ -1,5 +1,7 @@
 package Marco_02.Trabalho_T2.listas;
 
+import java.util.Stack;
+
 import Marco_02.Trabalho_T2.interfaces.IPilha;
 
 public class PilhaVet implements IPilha {
@@ -25,7 +27,7 @@ public class PilhaVet implements IPilha {
     public Object pop() { // desempilha
         Object o = null;
         if (this.isEmpty()) {
-            System.out.println("Pilha Vazia");
+            System.out.println("Pilha Vazia, Pop inválido.");
             return null;
         }
         o = this.pilha[numElem - 1];
@@ -56,8 +58,13 @@ public class PilhaVet implements IPilha {
     }
 
     public void imprimePilha() {
-        for (int i = numElem -1; i >= 0; i--) {
+        for (int i = numElem - 1; i >= 0; i--) {
             System.out.print(this.pilha[i]);
         }
+    }
+
+    public boolean ehPalindromo(String palavra) {
+        // TODO
+        return false;
     }
 }

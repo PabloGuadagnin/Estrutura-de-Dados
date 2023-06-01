@@ -33,7 +33,12 @@ public class Main {
         pilha.push(aluno2);
         pilha.push(aluno3);
 
-        pilha.imprimePilha();
+        System.out.println("");
+
+        System.out.println("Pilha: ");
+        pilha.imprimePilha(); // Imprime a pilha (ordem inversa a impressão da fila)
+
+        System.out.println("");
 
         System.out.print("Pilha está vazia? ");
         if (pilha.isEmpty()) {
@@ -42,6 +47,22 @@ public class Main {
             System.out.println("Pilha populada.");
         }
 
+        System.out.println("");
+        pilha.pop();
+
+        System.out.println("Pilha com um Pop: ");
+        pilha.imprimePilha(); // Imprime a pilha (ordem inversa a impressão da fila)
+
+        System.out.println("");
+
+        pilha.pop();
+
+        System.out.println("Pilha com dois Pop: ");
+        pilha.imprimePilha(); // Imprime a pilha (ordem inversa a impressão da fila)
+
+        System.out.println("");
+
+        pilha.pop();
         pilha.pop();
     }
 }
