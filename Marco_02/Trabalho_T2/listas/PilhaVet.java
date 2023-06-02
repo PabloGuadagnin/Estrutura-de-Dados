@@ -64,7 +64,18 @@ public class PilhaVet implements IPilha {
     }
 
     public boolean ehPalindromo(String palavra) {
-        // TODO
-        return false;
+        PilhaVet pilha = new PilhaVet(palavra.length()); // Cria uma instância da classe PilhaVet com tamanho igual ao
+                                                         // comprimento da palavra
+        for (char letra : palavra.toCharArray()) { // Percorre cada caractere da palavra
+            pilha.push(letra); // Empilha cada caractere na pilha
+        }
+        StringBuilder palavraInvertida = new StringBuilder(); // Cria um StringBuilder para construir a palavra
+                                                              // invertida
+        while (!pilha.isEmpty()) { // Enquanto a pilha não estiver vazia
+            palavraInvertida.append(pilha.pop()); // Desempilha cada caractere e adiciona ao StringBuilder para
+                                                  // construir a palavra invertida
+        }
+        return palavra.equals(palavraInvertida.toString()); // Retorna true se a palavra original for igual à palavra
+                                                            // invertida, caso contrário, retorna false
     }
 }
