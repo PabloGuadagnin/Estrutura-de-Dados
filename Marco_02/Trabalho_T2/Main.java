@@ -64,5 +64,12 @@ public class Main {
 
         pilha.pop();
         pilha.pop();
+
+        // Verificação de palindromo
+        String palavra1 = "arara";
+        String palavra2 = "carro";
+
+        System.out.println("\n" + palavra1 + " é palíndromo? " + pilha.ehPalindromo(palavra1));
+        System.out.println(palavra2 + " é palíndromo? " + pilha.ehPalindromo(palavra2));
     }
 }
