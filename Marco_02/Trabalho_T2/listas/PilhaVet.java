@@ -27,7 +27,7 @@ public class PilhaVet implements IPilha {
     public Object pop() { // desempilha
         Object o = null;
         if (this.isEmpty()) {
-            System.out.println("Pilha Vazia, Pop inválido.");
+            System.out.println("Pilha Vazia, Pop desnecessário.");
             return null;
         }
         o = this.pilha[numElem - 1];
