@@ -1,6 +1,6 @@
-package Marco_02.Exercício_13.listas;
+package Marco_02.Exercício_14.listas;
 
-import Marco_02.Exercício_13.objetos.Aluno;
+import Marco_02.Exercício_14.objetos.Aluno;
 
 public class MapaHashLSE {
     private static final int INITIAL_CAPACITY = 10;
@@ -49,6 +49,18 @@ public class MapaHashLSE {
             }
         }
         return null;
+    }
+
+    public void getTudo() {
+        System.out.println("Vetor de Listas:");
+        for (int i = 0; i < vetorLista.length; i++) {
+            System.out.print(i + ": ");
+            if (vetorLista[i] != null) {
+                System.out.println(vetorLista[i].toString());
+            } else {
+                System.out.println("null");
+            }
+        }
     }
 
     public ListaObj remove(int chave) {
