@@ -1,6 +1,6 @@
-package Marco_02.Trabalho_T2.listas;
+package Marco_02.Exercício_13.listas;
 
-import Marco_02.Trabalho_T2.interfaces.IListaObj;
+import Marco_02.Exercício_13.interfaces.IListaObj;
 
 public class ListaObj implements IListaObj {
 

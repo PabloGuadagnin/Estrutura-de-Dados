@@ -1,6 +1,6 @@
-package Marco_02.Trabalho_T2.listas;
+package Marco_02.Exercício_13.listas;
 
-import Marco_02.Trabalho_T2.interfaces.IPilha;
+import Marco_02.Exercício_13.interfaces.IPilha;
 
 public class PilhaVet implements IPilha {
 
